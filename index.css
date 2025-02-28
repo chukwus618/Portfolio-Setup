@@ -72,3 +72,35 @@ img {
   top: 92px;
   padding-bottom: 200px;
 }
+
+.works {
+  background-color: #fff;
+  border: 1px #dfe1e6;
+  border-radius: 16px;
+}
+
+ul,
+li {
+  display: flex;
+  gap: 12px;
+}
+
+.work-section {
+  padding: 114px 24px 114px 24px;
+}
+
+.snapshoot {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  color: #396df2;
+  line-height: 24px;
+}
