@@ -1,10 +1,16 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f7f7f9;
+}
+
+.headline {
   background-image: url(icons/mobilbg@2x.svg);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: 100%;
+  background-size: cover;
   padding: 10px 24px;
+  border-radius: 0 0 0 100px;
+  background-color: #ffffff;
 }
 
 header {
@@ -24,25 +30,29 @@ h1 {
   color: #172b4d;
   font-weight: 700;
   font-size: 40px;
+  line-height: 52px;
 }
 
-.primary-text {
+#primary-text {
   color: #344563;
   font-weight: 400;
   font-size: 16px;
 }
 
-p, .pm {
+p, #pm {
   color: #7f8cff;
 }
 
-.pm {
-  font-size: 17px;
+#pm {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .social-media-icons {
   display: flex;
-  gap: 15px;
+  align-items: baseline;
+  gap: 12px;
 }
 
 img {
@@ -53,10 +63,11 @@ img {
 #menu-icon {
   width: 18px;
   height: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
-article {
+.information {
   position: relative;
   top: 92px;
+  padding-bottom:  200px;
 }
