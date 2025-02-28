@@ -17,7 +17,7 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Deployment](#deployment)
-- [👥 Authors](#authors)
+- [👥 Author](#author)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -63,8 +63,8 @@ You can deploy this project using:Github
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
-👤 **Author1**
+## 👥 Author <a name="author"></a>
+👤 **Author**
 
 - GitHub: [Github-handle](https://github.com/chukwus618)
 - Twitter: [X-handle](https://x.com/@chukwus618)
