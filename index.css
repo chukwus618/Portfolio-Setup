@@ -1,13 +1,14 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f7f7f9;
+  margin: 0px;
 }
 
 .headline {
   background-image: url(icons/mobilbg@2x.svg);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 100%;
   padding: 10px 24px;
   border-radius: 0 0 0 100px;
   background-color: #fff;
@@ -31,6 +32,7 @@ h1 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  margin: 0 0 2px 0;
 }
 
 #primary-text {
