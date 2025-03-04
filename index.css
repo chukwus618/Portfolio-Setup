@@ -109,7 +109,7 @@ button {
   letter-spacing: 0.5px;
   color: #396df2;
   line-height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 .caption1 {
