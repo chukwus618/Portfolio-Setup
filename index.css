@@ -1,0 +1,76 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f9;
+  margin: 0px;
+}
+
+.headline {
+  background-image: url(icons/mobilbg@2x.svg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100%;
+  padding: 10px 24px;
+  border-radius: 0 0 0 100px;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: #6070ff;
+  margin-block-start: auto;
+}
+
+h1 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0 0 2px 0;
+}
+
+#primary-text {
+  color: #344563;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+p,
+#pm {
+  color: #7f8cff;
+}
+
+#pm {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+img {
+  width: 24px;
+  height: 24px;
+}
+
+#menu-icon {
+  width: 18px;
+  height: 12px;
+  margin-bottom: 15px;
+}
+
+.information {
+  position: relative;
+  top: 92px;
+  padding-bottom: 200px;
+}
