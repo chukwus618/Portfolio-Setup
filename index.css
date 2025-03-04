@@ -1,7 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f7f7f9;
-  margin: 0px;
+  margin: 0;
 }
 
 .headline {
@@ -79,24 +79,25 @@ img {
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  padding: 10px 24px;
-  margin-top: 50%;
+  padding: 16px;
+  margin-top: 100px;
 }
 
 ul,
 li {
   display: flex;
   gap: 12px;
+  justify-content: center;
 }
 
 .work-section {
-  padding: 114px 24px 114px 24px;
+  padding: 10px 24px;
 }
 
 .snapshoot {
   width: 100%;
   height: 100%;
-  border-radius: 3px;
+  border-radius: 8px;
 }
 
 button {
@@ -108,4 +109,69 @@ button {
   letter-spacing: 0.5px;
   color: #396df2;
   line-height: 24px;
+  font-family: 'Poppins';
+}
+
+.caption1 {
+  font-weight: 600;
+  font-size: 13px;
+  color: #344563;
+  line-height: 16px;
+}
+
+span {
+  color: #7a869a;
+  line-height: 16px;
+}
+
+#circle {
+  width: 8px;
+  height: 8px;
+  background-color: #c1c7d0;
+  border-radius: 100%;
+  margin-top: 4px;
+}
+
+.text3 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #344563;
+}
+
+.tag {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  color: #6070ff;
+  margin-top: 4px;
+}
+
+.tag1,
+.tag2,
+.tag3 {
+  background-color: #ebebff;
+  width: 57px;
+  height: 24px;
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
+.tag2 {
+  width: 49px;
+  height: 24px;
+}
+
+.tag3 {
+  width: 92px;
+  height: 24px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
 }
