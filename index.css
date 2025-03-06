@@ -256,3 +256,18 @@ menu {
 #lang {
   margin-top: 23px;
 }
+
+button:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+button:active {
+  background-color :#2230d2;
+}
+
+button:foc {
+  background-color: #fff;
+  border: 1px solid #7f8cff;
+  color: #6070ff;
+}
