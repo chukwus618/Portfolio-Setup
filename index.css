@@ -277,3 +277,64 @@ button:focus {
   width: 8px;
   height: 14px;
 }
+
+.contact-section {
+  background-color: #6070ff;
+  background-image: url(icons/contact\ form\ shapes-mobile@2x.png);
+  background-attachment: fixed;
+  background-size: 100%;
+  padding: 10px 24px;
+  border-radius: 100px 0 0 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shape {
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #0d151e;
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+  width: 100%;
+  height: 170px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+#email, 
+#name {
+  font-weight: 400;
+  font-size: 17px;
+  color: #172b4d;
+  line-height: 20px;
+  border-radius: 8px;
+  height: 48px;
+  width: 100%;
+}
+
+.contact-header-text {
+  font-weight: 700;
+  color: #fff;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.il {
+  position: relative;
+  top: 92px;
+
+}
