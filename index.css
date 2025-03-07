@@ -224,7 +224,7 @@ menu {
   width: 14px;
   height: 8px;
   margin-top: 36px;
-  margin-inline-end: 12%;
+  margin-inline-end: 5%;
 }
 
 #frameworks,
@@ -281,5 +281,20 @@ button:focus {
 h2 {
   font-weight: 700;
   font-size: 40px;
-  line-height: 52px
+  line-height: 52px;
+  margin: 0;
+  color: #172b4d;
+}
+
+#primary-text {
+  margin: 5px 0 16px 0;
+}
+
+#about-myself {
+  position: relative;
+  top: 92px;
+}
+
+.list-section {
+  padding-left: 12px;
 }
