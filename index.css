@@ -103,16 +103,17 @@ menu {
 }
 
 button {
-  border: 1px solid #6070ff;
+  border: 1px solid #7f8cff;
   border-radius: 8px;
   padding: 12px;
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 0.5px;
-  color: #396df2;
+  color: #6070ff;
   line-height: 24px;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  background-color: #fff;
 }
 
 .caption1 {
@@ -152,6 +153,7 @@ span {
   line-height: 16px;
   color: #6070ff;
   margin-top: 4px;
+  margin-inline-start: 11px;
 }
 
 .tag1,
@@ -161,7 +163,6 @@ span {
   width: 57px;
   height: 24px;
   border-radius: 8px;
-  padding: 4px 12px;
 }
 
 .tag2 {
@@ -196,8 +197,9 @@ h4 {
 }
 
 menu {
-  margin-right: 50%;
+  margin-inline-start: 10px;
   padding: 0;
+  gap: 20px;
 }
 
 .lang-types {
@@ -268,10 +270,4 @@ button:hover {
 button:focus {
   background-color: #2230d2;
   color: #fff;
-}
-
-button:active {
-  background-color: #fff;
-  border: 1px solid #7f8cff;
-  color: #6070ff;
 }
