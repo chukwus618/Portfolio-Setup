@@ -219,10 +219,12 @@ menu {
   justify-items: center;
 }
 
-.dropdown {
+.dropdown, 
+.dropup {
   width: 14px;
   height: 8px;
   margin-top: 36px;
+  margin-inline-end: 12%;
 }
 
 #frameworks,
@@ -245,7 +247,6 @@ menu {
   gap: 6%;
   min-width: 303px;
   max-width: 100%;
-  margin-right: 6px;
 }
 
 .lang-logo {
@@ -270,4 +271,9 @@ button:hover {
 button:focus {
   background-color: #2230d2;
   color: #fff;
+}
+
+.dropup {
+  width: 8px;
+  height: 14px;
 }
