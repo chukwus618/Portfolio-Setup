@@ -88,7 +88,7 @@ li,
 menu {
   display: flex;
   gap: 12px;
-  justify-content: center;
+  justify-content: left;
   padding: 0;
 }
 
@@ -125,6 +125,8 @@ button {
 span {
   color: #7a869a;
   line-height: 16px;
+  font-weight: 600;
+  font-size: 13px;
 }
 
 #circle {
@@ -199,7 +201,6 @@ menu {
 }
 
 .lang-types {
-  padding: 12px;
   font-weight: 500;
   font-size: 15px;
   color: #253858;
@@ -207,6 +208,7 @@ menu {
   gap: 12px;
   flex-direction: column;
   list-style-type: none;
+  padding: 0;
 }
 
 .frame {
@@ -260,13 +262,15 @@ menu {
 button:hover {
   color: #fff;
   background-color: #6070ff;
+  box-shadow: 0 8px 16px 0 rgba(64, 83, 252, 0.3);
+}
+
+button:focus {
+  background-color :#2230d2;
+  color: #fff;
 }
 
 button:active {
-  background-color :#2230d2;
-}
-
-button:foc {
   background-color: #fff;
   border: 1px solid #7f8cff;
   color: #6070ff;
