@@ -278,13 +278,15 @@ button:focus {
   height: 14px;
 }
 
-.contact-section {
+.contact-info {
   background-color: #6070ff;
-  background-image: url(icons/contact\ form\ shapes-mobile@2x.png);
-  background-attachment: fixed;
-  background-size: 100%;
-  padding: 10px 24px;
+  background-image: url(icons/contact-section-bg.png);
+  background-attachment: scroll;
+  padding: 114px 24px 10px;
   border-radius: 100px 0 0 0;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 240px;
 }
 
 form {
@@ -298,8 +300,8 @@ form {
   height: 5px;
   border-radius: 10px;
   background-color: #0d151e;
-  display: flex;
-  justify-content: center;
+  margin-inline-start: 100px;
+  margin-top: 40px;
 }
 
 textarea {
@@ -331,11 +333,12 @@ textarea {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
+  vertical-align: middle;
 }
 
-.il {
-  position: relative;
-  top: 92px;
+.contact-section {
+  background-color: #fff;
+  padding-top: 50px;
 }
 h2 {
   font-weight: 700;
@@ -355,4 +358,17 @@ h2 {
 
 .list-section {
   padding-left: 12px;
+}
+
+.contact-text {
+  color: #ebebff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button-contact {
+  margin-top: 22px;
 }
