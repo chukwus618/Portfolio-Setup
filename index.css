@@ -185,7 +185,7 @@ h3 {
 .about-myself {
   background-color: #fff;
   border-radius: 0 100px 0 0;
-  padding: 10px 24px;
+  padding: 10px 24px 114px;
   margin-top: 120px;
 }
 
@@ -291,8 +291,7 @@ h2 {
 }
 
 #about-myself {
-  position: relative;
-  top: 92px;
+  margin-top: 120px;
 }
 
 .list-section {
