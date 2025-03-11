@@ -102,7 +102,8 @@ menu {
   border-radius: 8px;
 }
 
-button {
+button,
+.button-contact {
   border: 1px solid #7f8cff;
   border-radius: 8px;
   padding: 12px;
@@ -285,7 +286,7 @@ button:focus {
   padding: 114px 24px 10px;
   border-radius: 100px 0 0 0;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right top;
   background-size: 240px;
 }
 
@@ -307,24 +308,18 @@ form {
 textarea {
   width: 100%;
   height: 170px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #b3bac5;
-  font-family: 'Poppins', sans-serif;
   border-radius: 8px;
   background-color: #fff;
+  border: 1px solid #cfd8dc;
 }
 
 #email,
 #name {
-  font-weight: 400;
-  font-size: 17px;
-  color: #172b4d;
-  line-height: 20px;
   border-radius: 8px;
   height: 48px;
   width: 100%;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
 }
 
 .contact-header-text {
@@ -372,4 +367,25 @@ h2 {
 
 .button-contact {
   margin-top: 22px;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  color: #172b4d;
+  line-height: 20px;
+  position: fixed;
+  top: 15px;
+  left: 16px;
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  top: 15px;
+  left: 16px;
 }
