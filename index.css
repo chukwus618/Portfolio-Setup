@@ -366,7 +366,8 @@ h2 {
 }
 
 .button-contact {
-  margin-top: 22px;
+  margin-top: 5px;
+  align-self: flex-start;
 }
 
 input::placeholder {
