@@ -139,7 +139,7 @@ span {
   margin-top: 4px;
 }
 
-.text3 {
+p.text3 {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -513,6 +513,39 @@ h2 {
   #tag4 {
     text-transform: none;
   }
+
+  .contact-info {
+    background-image: url(icons/contact-form-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-origin: content-box;
+  }
+
+  .shape {
+    display: none;
+  }
+
+  #contact-info {
+    padding: 26%;
+    padding-top: 60px;
+    padding-bottom: 150px;
+  }
+
+  .contact-section {
+    padding: 0;
+  }
+
+  #email,
+  #name,
+  textarea {
+    max-width: max-content;
+    min-width: 447px;
+    align-self: center;
+  }
+
+  button.button-contact {
+    align-self: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -520,7 +553,8 @@ h2 {
     display: none;
   }
 
-  #work1 {
+  #work1,
+  .notmobile {
     display: none;
   }
 }
