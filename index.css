@@ -287,13 +287,14 @@ button:focus {
   border-radius: 100px 0 0 0;
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: 240px;
+  background-size: 245px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 10px;
 }
 
 .shape {
@@ -320,6 +321,8 @@ textarea {
   width: 100%;
   background-color: #fff;
   border: 1px solid #cfd8dc;
+  box-sizing: border-box;
+  padding: 16px;
 }
 
 .contact-header-text {
@@ -362,7 +365,7 @@ h2 {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .button-contact {
@@ -370,17 +373,8 @@ h2 {
   align-self: flex-start;
 }
 
+textarea::placeholder,
 input::placeholder {
-  font-weight: 400;
-  font-size: 17px;
-  color: #172b4d;
-  line-height: 20px;
-  position: fixed;
-  top: 15px;
-  left: 16px;
-}
-
-textarea::placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
