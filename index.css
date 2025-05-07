@@ -9,15 +9,18 @@ body {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100%;
-  padding: 10px 24px;
+  padding: 100px 24px;
   border-radius: 0 0 0 100px;
-  border: 1px solid #ebebff;
+  background-color: #fff;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  padding: 20px 16px 0 16px;
+  background-color: #fff;
 }
 
 .logo {
@@ -67,12 +70,6 @@ img {
   width: 18px;
   height: 12px;
   margin-bottom: 15px;
-}
-
-.headline {
-  position: relative;
-  top: 92px;
-  padding-bottom: 200px;
 }
 
 .works {
@@ -397,8 +394,7 @@ h2 {
     background-origin: content-box;
     background-size: 100%;
     background-color: #fff;
-    padding-bottom: 300px;
-    padding-top: 50px;
+    padding: 150px 0 250px 0;
   }
 
   .information-container {
@@ -586,4 +582,23 @@ input::placeholder {
   position: fixed;
   top: 15px;
   left: 16px;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 767px) {
+  .information-container {
+    padding: 0;
+  }
+
+  .works {
+    margin: 100px 0;
+  }
+
+  #primary-text {
+    padding: 0;
+  }
+
+  #about-myself {
+    margin: 0;
+    margin-top: 100px;
+  }
 }
