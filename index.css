@@ -309,6 +309,9 @@ textarea {
   border-radius: 8px;
   background-color: #fff;
   border: 1px solid #cfd8dc;
+  padding: 16px;
+  box-sizing: border-box;
+  resize: none;
 }
 
 #email,
@@ -579,9 +582,6 @@ input::placeholder {
   line-height: 24px;
   color: #b3bac5;
   font-family: 'Poppins', sans-serif;
-  position: fixed;
-  top: 15px;
-  left: 16px;
 }
 
 @media screen and (max-width: 1280px) and (min-width: 767px) {
