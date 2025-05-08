@@ -605,4 +605,8 @@ input::placeholder {
   .logo {
     padding-left: 100px;
   }
+
+  #nav-bar {
+    padding-right: 100px;
+  }
 }
