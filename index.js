@@ -22,3 +22,7 @@ closeIcon.addEventListener('click', () => {
   overLay.style.display = 'none';
   contactSection.appendChild(shape);
 });
+
+navBar.addEventListener('click', () => {
+  overLay.style.display = 'none';
+});
