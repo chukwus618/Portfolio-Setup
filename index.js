@@ -14,6 +14,7 @@ const works = [
     yearMobile: '2015',
     yearDesktop: '2015',
     tag: ['HTML', 'Ruby on rails', 'CSS', 'Javascript'],
+    tagPopup: ['Ruby', 'Bootstrap'],
     seeProjectBtn: '',
   },
 
@@ -32,6 +33,7 @@ const works = [
     yearMobile: '2015',
     yearDesktop: '2015',
     tag: ['HTML', 'Ruby on rails', 'CSS', 'Javascript'],
+    tagPopup: ['Ruby', 'Bootstrap'],
     seeProjectBtn: '',
   },
 
@@ -50,6 +52,7 @@ const works = [
     yearMobile: '2015',
     yearDesktop: '2015',
     tag: ['HTML', 'Ruby on rails', 'CSS', 'Javascript'],
+    tagPopup: ['Ruby', 'Bootstrap'],
     seeProjectBtn: '',
   },
 
@@ -68,6 +71,7 @@ const works = [
     yearMobile: '2015',
     yearDesktop: '2018',
     tag: ['HTML', 'Ruby on rails', 'CSS', 'Javascript'],
+    tagPopup: ['Ruby', 'Bootstrap'],
     seeProjectBtn: '',
   },
 ];
@@ -87,7 +91,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   menuIcon.addEventListener('click', () => {
     navBar.style.display = 'flex';
-    navBar.classList.add('active');
     overLay.style.display = 'block';
     overLay.classList.add('overlay-menu');
     overLay.classList.remove('overlay-popup');
@@ -107,12 +110,6 @@ window.addEventListener('DOMContentLoaded', () => {
   navBar.addEventListener('click', () => {
     overLay.style.display = 'none';
   });
-
-  const checKInnerWidth = () => {
-    window.addEventListener('resize', () => console.log(window.innerWidth));
-  };
-
-  checKInnerWidth();
 
   const fetchProjectCard = (works, index) => (
     `<section class="works">
@@ -138,7 +135,7 @@ window.addEventListener('DOMContentLoaded', () => {
            <p class="tag">${works.tag[0]}</p>
          </li>
          <li class="tag4">
-           <p class="notmobile tag" id="tag4">${works.tag[1]}</p>
+           <p class="notmobile tag">${works.tag[1]}</p>
          </li>
          <li class="tag2">
            <p class="tag">${works.tag[2]}</p>
@@ -154,20 +151,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   projectContainer.innerHTML = works.map((works, index) => fetchProjectCard(works, index)).join('');
 
-  // const popupButtons = document.querySelectorAll('.project-button');
-
-  // popupButtons.forEach((button) => {
-  //   button.addEventListener('click', (e) => {
-  //     const index = e.currentTarget.getAttribute('data-index');
-  //     showPopup(index);
-  //   });
-  // });
-
   const displayPop = (index) => (
     `<section class="popup-content">
       <section class="popup-header">
-       <h3 class="header-desktop hide-desk">${works[index].nameMobile}</h3>
-       <h3 class="header-desktop hide-mobile">${works[index].nameDesktop}</h3>
+       <h3 class="hide-desk">${works[index].nameMobile}</h3>
+       <h3 class="hide-mobile">${works[index].nameDesktop}</h3>
        <img src="icons/popup-close-icon.png" alt="Close" class="popup-close-icon"/>
       </section>
       <ul>
@@ -188,18 +176,23 @@ window.addEventListener('DOMContentLoaded', () => {
          <p class="text3 hide-mobile">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.</p>
        </section>
        <aside>
-         <ul>
+         <ul class="">
            <li class="tag1">
              <p class="tag">${works[index].tag[0]}</p>
-           </li>
-           <li class="tag4">
-             <p class="notmobile tag" id="tag4">${works[index].tag[1]}</p>
            </li>
            <li class="tag2">
              <p class="tag">${works[index].tag[2]}</p>
            </li>
            <li class="tag3">
              <p class="tag">${works[index].tag[3]}</p>
+           </li>
+         </ul>
+         <ul>
+           <li class="tag5">
+             <p class="tag notmobile">${works[index].tagPopup[0]}</p>
+           </li>
+           <li class="tag6">
+             <p class="tag notmobile">${works[index].tagPopup[1]}</p>
            </li>
          </ul>
          <div id="divider"></div>
@@ -225,16 +218,11 @@ window.addEventListener('DOMContentLoaded', () => {
       overLay.classList.remove('overlay-menu', 'overlay-popup');
       bodyElement.style.overflow = 'auto';
     });
-    console.log('here', index);
-    console.log('Popup content HTML:', popup.innerHTML);
   };
   projectContainer.addEventListener('click', (event) => {
-    // Check if the clicked element has the 'project-button' class
     if (event.target && event.target.classList.contains('project-button')) {
       const index = event.target.getAttribute('data-index');
       showPopup(index);
     }
   });
-  console.log('Popup element:', popup);
-  console.log('Popup display style:', popup.style.display);
 });
