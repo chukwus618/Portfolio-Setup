@@ -207,7 +207,6 @@ menu {
 .lang-types {
   font-weight: 500;
   font-size: 15px;
-  color: #253858;
   display: flex;
   gap: 12px;
   flex-direction: column;
@@ -239,9 +238,9 @@ menu {
   height: 20px;
 }
 
-.javascript,
-.html,
-.css {
+#javascript,
+#html,
+#css {
   background-color: #f7f7f9;
   border-radius: 8px;
   height: 67px;
@@ -260,8 +259,9 @@ menu {
   margin-left: 3%;
 }
 
-#lang {
+.lang {
   margin-top: 23px;
+  color: #253858;
 }
 
 button:hover {
@@ -426,7 +426,9 @@ h2 {
 
 @media screen and (min-width: 768px) {
   #menu-icon,
-  #close-icon {
+  #close-icon,
+  #shape,
+  #overlay {
     display: none;
   }
 
@@ -499,10 +501,6 @@ h2 {
     line-height: 52px;
   }
 
-  .tag {
-    text-transform: lowercase;
-  }
-
   .caption1 {
     font-size: 18px;
     font-weight: 500;
@@ -520,7 +518,7 @@ h2 {
     padding: 0 20px 0 20px;
   }
 
-  #circle {
+  .circle {
     margin-top: 8px;
   }
 
@@ -547,9 +545,9 @@ h2 {
     flex-direction: row;
   }
 
-  .javascript,
-  .html,
-  .css {
+  #javascript,
+  #html,
+  #css {
     min-width: 122px;
     flex-direction: column;
     align-content: center;
@@ -571,10 +569,6 @@ h2 {
     display: none;
   }
 
-  .header-desktop {
-    display: none;
-  }
-
   .tag4 {
     border-radius: 8px;
     background-color: #ebebff;
@@ -582,8 +576,18 @@ h2 {
     width: 105px;
   }
 
-  #tag4 {
-    text-transform: none;
+  .tag5 {
+    border-radius: 8px;
+    background-color: #ebebff;
+    width: 56px;
+    height: 24px;
+  }
+
+  .tag6 {
+    border-radius: 8px;
+    background-color: #ebebff;
+    width: 86px;
+    height: 24px;
   }
 
   .contact-info {
@@ -591,10 +595,6 @@ h2 {
     background-repeat: no-repeat;
     background-size: 100%;
     background-origin: content-box;
-  }
-
-  #shape {
-    display: none;
   }
 
   #contact-info {
@@ -625,7 +625,7 @@ h2 {
     left: 142px;
     bottom: 77px;
     right: 142px;
-    transform: translate(-77px -142px);
+    padding-bottom: 60px;
   }
 
   .desktop-popup-content {
@@ -648,8 +648,8 @@ h2 {
   #nav-bar,
   .fast-link {
     position: relative;
-    top: 30px;
-    left: 12px;
+    top: 20px;
+    right: 40px;
     gap: 20px;
     color: #fff;
     font-weight: 600;
@@ -657,7 +657,7 @@ h2 {
     line-height: 44px;
     text-decoration: none;
     flex-direction: column;
-    z-index: 1;
+    z-index: 400;
   }
 
   a:active {
@@ -696,6 +696,7 @@ input::placeholder {
   top: 25px;
   right: 47px;
   cursor: pointer;
+  z-index: 400;
 }
 
 #live-button {
