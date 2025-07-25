@@ -550,8 +550,7 @@ h2 {
   #css {
     min-width: 122px;
     flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
+    align-items: center;
     min-height: 120px;
     max-height: fit-content;
   }
