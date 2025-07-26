@@ -196,8 +196,10 @@ window.addEventListener('DOMContentLoaded', () => {
            </li>
          </ul>
          <div id="divider"></div>
-         <button type="button" id="live-button">See live</button>
-         <button type="button" id="source-button">See source</button>
+         <section class="button-container">
+           <button type="button" id="live-button">See live</button>
+           <button type="button" id="source-button">See source</button>
+         </section>
        </aside>
       </section>
     </section>`
