@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-.information {
+#information {
   background-image: url(icons/mobilbg@2x.svg);
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -337,7 +337,7 @@ textarea {
   vertical-align: middle;
 }
 
-.contact-section {
+#contact-section {
   background-color: #fff;
   padding-top: 50px;
 }
@@ -463,7 +463,7 @@ h2 {
     padding-left: 150px;
   }
 
-  section.information {
+  section#information {
     background-image: url(icons/desktop-bg.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -602,7 +602,7 @@ h2 {
     padding-bottom: 150px;
   }
 
-  .contact-section {
+  #contact-section {
     padding: 0;
   }
 
@@ -629,6 +629,15 @@ h2 {
 
   .desktop-popup-content {
     display: flex;
+  }
+
+  aside {
+    min-width: 306px;
+    max-width: fit-content;
+  }
+
+  .desk-description {
+    padding-top: 30px;
   }
 }
 
@@ -698,11 +707,15 @@ input::placeholder {
   z-index: 400;
 }
 
+.button-container {
+  display: flex;
+}
+
 #live-button {
   background-image: url(icons/icon-in-button.png);
   background-repeat: no-repeat;
   background-position: right 12px center;
-  padding-right: 35px;
+  padding-right: 45px;
   margin-left: 10px;
 }
 
@@ -710,7 +723,7 @@ input::placeholder {
   background-image: url(icons/github-in-button.png);
   background-repeat: no-repeat;
   background-position: right 12px center;
-  padding-right: 35px;
+  padding-right: 45px;
   margin-left: 10px;
 }
 
