@@ -228,3 +228,17 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+const form = document.querySelector('form');
+const submitButton = document.querySelector('.button-contact');
+submitButton.addEventListener('click', () => {
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData);
+  localStorage.setItem('userData', JSON.stringify(data));
+});
+const userSavedData = JSON.parse(localStorage.getItem('userData'));
+Object.fromEntries(Object.entries(userSavedData));
+const dataArray = Object.entries(userSavedData);
+dataArray.forEach(([key, value]) => {
+  form.elements[key].value = value;
+});
