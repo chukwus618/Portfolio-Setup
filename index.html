@@ -11,19 +11,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
 </head>
 <body>
   <article class="headline">
    <nav>
      <p class="logo">My Logo</p>
+     <div id="overlay"></div>
      <ul id="nav-bar">
-     <li>Portfolio</li>
-     <li>About</li>
-     <li>Contact</li>
+       <li class="fast-link"><a href="#information" class="fast-link">Portfolio</a></li>
+       <li class="fast-link"><a href="#about-myself" class="fast-link">About</a></li>
+       <li class="fast-link"><a href="#contact-info" class="fast-link">Contact</a></li>
      </ul>
+     <img src="icons/cancel-icon.png" id="close-icon" alt="close-icon"/>
      <img src="icons/Union.png" id="menu-icon" alt="menu-icon"/>
    </nav>
-    <section class="information">
+    <section id="information">
       <div class="information-container">
         <section class="text">
           <h1>I'm Promise.</br>Glad to see you!</h1>
@@ -43,157 +46,6 @@
     </section>
  </article>
  <article class="work-section">
-    <section id="work1" class="works">
-     <img class="snapshoot" src="icons/snapshoot5.png" alt="A snapshot">
-     <div class="project-card-details">
-       <h3>Tonic</h3>
-       <ul>
-         <li class="caption1">CANOPY</li>
-         <div id="circle"></div>
-         <li><span>Back End Dev</span></li>
-         <div id="circle"></div>
-         <li><span>2015</span></li>
-       </ul>
-       <p class="text3">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-       <ul>
-         <li class="tag1">
-           <p class="tag">HTML</p>
-         </li>
-         <li class="tag2">
-           <p class="tag">CSS</p>
-         </li>
-         <li class="tag3">
-           <p class="tag">JavaScript</p>
-         </li>
-       </ul>
-       <button type="button">See project</button>
-     </div>
-    </section>
-    <section class="works">
-      <img class="snapshoot" src="icons/proshot.png" alt="A snapshot">
-      <div class="project-card-details">
-       <h3 class="header-desktop">Tonic</h3>
-       <h3 class="notmobile">FACEBOOK 360</h3>
-       <ul>
-         <li class="span-desktop caption1">CANOPY</li>
-         <li class="notmobile caption1">FACEBOOK</li>
-         <div id="circle"></div>
-         <li class="span-desktop"><span>Back End Dev</span></li>
-         <li class="notmobile"><span>Full Stack Dev</span></li> 
-         <div id="circle"></div>
-         <li><span>2015</span></li>
-       </ul>
-       <p class="text-desktop text3">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-       <p class="notmobile text3">Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
-       <ul>
-         <li class="tag1">
-           <p class="tag">HTML</p>
-         </li>
-         <li class="tag4">
-          <p class="notmobile tag" id="tag4">Ruby on rails</p>
-         </li>
-         <li class="tag2">
-           <p class="tag">CSS</p>
-         </li>
-         <li class="tag3">
-           <p class="tag">JavaScript</p>
-         </li>
-       </ul> 
-       <button type="button">See project</button>
-      </div>
-   </section>
-   <section class="works">
-     <img class="snapshoot" src="icons/proshot2.png" alt="A snapshot">
-     <div class="project-card-details">
-       <h3 class="header-desktop">Multi-Post Stories</h3>
-       <h3 class="notmobile">Uber Navigation</h3>
-       <ul>
-         <li class="span-desktop caption1">CANOPY</li>
-         <li class="notmobile caption1">Uber</li>
-         <div id="circle"></div>
-         <li class="span-desktop"><span>Back End Dev</span></li>
-         <li class="notmobile"><span>Lead Developer</span></li>
-         <div id="circle"></div>
-         <li class="span-desktop"><span>2015</span></li>
-         <li class="notmobile"><span>2018</span></li>
-       </ul>
-        <p class="text-desktop text3">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-        <p class="notmobile text3">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
-       <ul>
-         <li class="tag1">
-           <p class="tag">HTML</p>
-         </li>
-         <li class="tag4">
-          <p class="notmobile tag" id="tag4">Ruby on rails</p>
-         </li>
-         <li class="tag2">
-           <p class="tag">CSS</p>
-         </li>
-         <li class="tag3">
-          <p class="tag">JavaScript</p>
-         </li>
-       </ul>
-       <button type="button">See project</button>
-     </div>
-   </section>
-   <section class="works" id="works3">
-     <img class="snapshoot" src="icons/proshot3.png" alt="A snapshot">
-     <div class="project-card-details">
-       <h3>Tonic</h3>
-       <ul>
-         <li class="caption1">CANOPY</li>
-         <div id="circle"></div>
-         <li><span>Back End Dev</span></li>
-         <div id="circle"></div>
-         <li><span>2015</span></li>
-       </ul>
-       <p class="text3">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-       <ul>
-         <li class="tag1">
-           <p class="tag">HTML</p>
-         </li>
-         <li class="tag2">
-           <p class="tag">CSS</p>
-         </li>
-         <li class="tag3">
-           <p class="tag">JavaScript</p>
-         </li>
-       </ul>
-       <button type="button">See project</button>
-      </div>
-   </section>
-   <section class="works">
-     <img class="snapshoot" src="icons/proshot4.png" alt="A snapshot">
-     <div class="project-card-details">
-       <h3>Multi-Post Stories</h3>
-       <ul>
-         <li class="span-desktop caption1">CANOPY</li>
-         <li class="notmobile caption1">FACEBOOK</li>
-         <div id="circle"></div>
-         <li class="span-desktop"><span>Back End Dev</span></li> 
-         <li class="notmobile"><span>Full Stack Dev</span></li> 
-         <div id="circle"></div>
-         <li><span>2015</span></li>
-       </ul>
-       <p class="text-desktop text3">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-       <p class="notmobile text3">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
-       <ul>
-         <li class="tag1">
-           <p class="tag">HTML</p>
-         </li>
-         <li class="tag4">
-          <p class="notmobile tag" id="tag4">Ruby on rails</p>
-         </li>
-         <li class="tag2">      
-           <p class="tag">CSS</p>
-         </li>
-         <li class="tag3">
-           <p class="tag">JavaScript</p>
-         </li>
-       </ul>
-       <button type="button">See project</button>
-     </div>  
-   </section>
  </article>
  <article class="about-myself">
    <section id="about-myself">
@@ -216,18 +68,18 @@
          <img class="dropdown" src="icons/dropdown.png" alt="a dropdown">
        </div>
        <ul class="lang-types">
-         <div class="javascript">     
+         <li id="javascript">     
            <img class="lang-logo" src="icons/js.png" alt="javascript logo">
-           <li id="lang">Javascript</li>
-         </div>
-         <div class="html">
+           <p class="lang">Javascript</li>
+           </li>
+         <li id="html">
            <img class="lang-logo" src="icons/html5.png" alt="html5 logo">
-           <li id="lang">HTML</li>
-         </div>
-         <div class="css">
+           <p class="lang">HTML</li>
+           </li>
+         <li id="css">
            <img class="lang-logo" src="icons/css.jpeg" alt="css logo">
-           <li id="lang">CSS</li>
-         </div>
+           <p class="lang">CSS</li>
+           </li>
        </ul>
        <div id="frameworks" class="frame">
          <h4>Frameworks</h4>
@@ -240,7 +92,7 @@
      </section>
     </section>
   </article>
-  <article class="contact-section">
+  <article id="contact-section">
     <section class="contact-info">
       <div id="contact-info">
        <h2 class="contact-header-text">Contact me</h2>
@@ -251,7 +103,7 @@
          <textarea name="message" required maxlength="500" placeholder="Write your message here..."></textarea>
          <button type="submit" class="button-contact">Get in touch</button>
        </form>
-       <div class="shape"></div>
+       <div id="shape"></div>
       </div>
     </section>
   </article>

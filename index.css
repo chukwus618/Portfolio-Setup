@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-.information {
+#information {
   background-image: url(icons/mobilbg@2x.svg);
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -78,6 +78,8 @@ img {
   border-radius: 16px;
   padding: 16px;
   margin-top: 100px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 ul,
@@ -97,6 +99,8 @@ menu {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  object-fit: cover;
+  box-sizing: border-box;
 }
 
 button,
@@ -128,7 +132,7 @@ span {
   font-size: 13px;
 }
 
-#circle {
+.circle {
   width: 8px;
   height: 8px;
   background-color: #c1c7d0;
@@ -203,7 +207,6 @@ menu {
 .lang-types {
   font-weight: 500;
   font-size: 15px;
-  color: #253858;
   display: flex;
   gap: 12px;
   flex-direction: column;
@@ -235,9 +238,9 @@ menu {
   height: 20px;
 }
 
-.javascript,
-.html,
-.css {
+#javascript,
+#html,
+#css {
   background-color: #f7f7f9;
   border-radius: 8px;
   height: 67px;
@@ -256,8 +259,9 @@ menu {
   margin-left: 3%;
 }
 
-#lang {
+.lang {
   margin-top: 23px;
+  color: #253858;
 }
 
 button:hover {
@@ -294,13 +298,14 @@ form {
   padding: 10px;
 }
 
-.shape {
+#shape {
   width: 134px;
   height: 5px;
   border-radius: 10px;
   background-color: #0d151e;
-  margin-inline-start: 100px;
-  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 textarea {
@@ -334,7 +339,7 @@ textarea {
   vertical-align: middle;
 }
 
-.contact-section {
+#contact-section {
   background-color: #fff;
   padding-top: 50px;
 }
@@ -359,18 +364,88 @@ h2 {
   padding-left: 12px;
 }
 
+#details-popup {
+  background-color: #fff;
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 30px;
+  top: 60px;
+  border-radius: 16px;
+  border: 1px solid #dfe1e6;
+  padding: 16px 16px 0 16px;
+  z-index: 300;
+  max-height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  display: none;
+}
+
+.popup-close-icon {
+  position: static;
+  top: 35px;
+  right: 7px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content {
+  position: relative;
+  padding: 0;
+  top: -20px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  cursor: default;
+}
+
+.overlay-popup {
+  background-color: #c1c7d0;
+}
+
+.overlay-menu {
+  background-color: #6070ff;
+}
+
 @media screen and (min-width: 768px) {
-  #menu-icon {
+  #menu-icon,
+  #close-icon,
+  #shape,
+  #overlay {
     display: none;
   }
 
   #nav-bar {
     display: flex;
-    gap: 12px;
+    gap: 15px;
     color: #344563;
     font-weight: 500;
     font-size: 15px;
     padding-right: 150px;
+  }
+
+  a.fast-link {
+    text-decoration: none;
+    color: #344563;
   }
 
   nav {
@@ -383,14 +458,14 @@ h2 {
     background-color: #fff;
     top: 0;
     padding-top: 22px;
-    z-index: 1;
+    z-index: 200;
   }
 
   .logo {
     padding-left: 150px;
   }
 
-  section.information {
+  section#information {
     background-image: url(icons/desktop-bg.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -428,10 +503,6 @@ h2 {
     line-height: 52px;
   }
 
-  .tag {
-    text-transform: lowercase;
-  }
-
   .caption1 {
     font-size: 18px;
     font-weight: 500;
@@ -449,7 +520,7 @@ h2 {
     padding: 0 20px 0 20px;
   }
 
-  #circle {
+  .circle {
     margin-top: 8px;
   }
 
@@ -476,13 +547,12 @@ h2 {
     flex-direction: row;
   }
 
-  .javascript,
-  .html,
-  .css {
+  #javascript,
+  #html,
+  #css {
     min-width: 122px;
     flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
+    align-items: center;
     min-height: 120px;
     max-height: fit-content;
   }
@@ -496,12 +566,7 @@ h2 {
     padding-bottom: 10px;
   }
 
-  .span-desktop,
-  .text-desktop {
-    display: none;
-  }
-
-  .header-desktop {
+  .hide-desk {
     display: none;
   }
 
@@ -512,8 +577,18 @@ h2 {
     width: 105px;
   }
 
-  #tag4 {
-    text-transform: none;
+  .tag5 {
+    border-radius: 8px;
+    background-color: #ebebff;
+    width: 56px;
+    height: 24px;
+  }
+
+  .tag6 {
+    border-radius: 8px;
+    background-color: #ebebff;
+    width: 86px;
+    height: 24px;
   }
 
   .contact-info {
@@ -523,17 +598,13 @@ h2 {
     background-origin: content-box;
   }
 
-  .shape {
-    display: none;
-  }
-
   #contact-info {
     padding: 26%;
     padding-top: 60px;
     padding-bottom: 150px;
   }
 
-  .contact-section {
+  #contact-section {
     padding: 0;
   }
 
@@ -548,16 +619,59 @@ h2 {
   button.button-contact {
     align-self: center;
   }
+
+  #details-popup {
+    border: 1px solid #ebecf0;
+    top: 77px;
+    left: 142px;
+    bottom: 77px;
+    right: 142px;
+    padding-bottom: 60px;
+  }
+
+  .desktop-popup-content {
+    display: flex;
+  }
+
+  aside {
+    min-width: 306px;
+    max-width: fit-content;
+  }
+
+  .desk-description {
+    padding-top: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  #nav-bar {
+  #nav-bar,
+  #overlay,
+  #close-icon,
+  .hide-mobile {
     display: none;
   }
 
-  #work1,
   .notmobile {
     display: none;
+  }
+
+  #nav-bar,
+  .fast-link {
+    position: relative;
+    top: 20px;
+    right: 40px;
+    gap: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    text-decoration: none;
+    flex-direction: column;
+    z-index: 400;
+  }
+
+  a:active {
+    color: #2230d2;
   }
 }
 
@@ -584,6 +698,40 @@ input::placeholder {
   font-family: 'Poppins', sans-serif;
 }
 
+#close-icon {
+  position: absolute;
+  top: 25px;
+  right: 47px;
+  cursor: pointer;
+  z-index: 400;
+}
+
+.button-container {
+  display: flex;
+}
+
+#live-button {
+  background-image: url(icons/icon-in-button.png);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 45px;
+  margin-left: 10px;
+}
+
+#source-button {
+  background-image: url(icons/github-in-button.png);
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 45px;
+  margin-left: 10px;
+}
+
+#divider {
+  color: #ebecf0;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1280px) and (min-width: 767px) {
   .information-container {
     padding: 0;
@@ -608,5 +756,9 @@ input::placeholder {
 
   #nav-bar {
     padding-right: 100px;
+  }
+
+  #shape {
+    display: none;
   }
 }
